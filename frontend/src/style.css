@@ -1,0 +1,65 @@
+.bpmn-panel {
+  position: absolute;
+  top: 100px;        
+  left: 20px;
+  background: rgba(0,0,0,0.6);
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  font-family: sans-serif;
+}
+
+.object-editor {
+  position: absolute;
+  top: calc(100vh - 90px);    
+  left: 50%;        
+  background: rgba(0,0,0,0.6);
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.file-editor {
+  position: absolute;
+  top: 22px;
+  left: 20%;
+  background: rgba(0,0,0,0.6);
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  z-index: 1000;         /* ensure it's above other elements */
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.option {
+  margin: 4px 0;
+  cursor: pointer;
+}
+.option:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.editor-options {
+  display: flex;
+  flex-direction: row;       
+  gap: 12px;
+}
+
+.panel-header {
+    user-select: none;
+    cursor: move;
+}
